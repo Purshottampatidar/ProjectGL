@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-color: #f1f1f1;
+}
+.Accordion_btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background: #fff;
+}
+.Accordion_btn:hover {
+  background: hsla(0, 0%, 93.7%, 0.5294117647);
+}
+.description {
+  padding-inline: 1rem;
+  line-height: 1.5;
+  background: #fff;
+  border-bottom: 1px solid gray;
+  color: rgb(77, 75, 75);
+}
+.description {
+  height: 0;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.description.expand {
+  height:auto;
+  transition: height .4s ease;
+} 
+.accordionItems {
+  margin:2rem auto;
+  max-width: 1024px;
+}
